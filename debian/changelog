@@ -1,0 +1,169 @@
+oggconvert (0.3.2-2ubuntu1) jaunty; urgency=low
+
+  * Merge from debian unstable, Ubuntu remaining changes:
+    - debian/control:
+      + Suggest gstreamer multiverse plugins.
+    - debian/patches/default_location:
+      + Ubuntu provides a Videos directory in $HOME folders, place default
+        "Save Folder" location there (LP: #209592).
+
+ -- Alessio Treglia <quadrispro@ubuntu.com>  Wed, 18 Feb 2009 23:32:37 +0100
+
+oggconvert (0.3.2-2) unstable; urgency=low
+
+  * Add Python Applications Packaging Team to Uploaders.
+  * Add Vcs-* fields in source stanza.
+  * Adhere to current Standards-version:
+    - Add debian/README.source file to document quilt usage.
+    - debian/patches/desktop_file_validation: add description.
+  * debian/copyright: Remove "(C)", use "©" instead to make Lintian happy.
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Mon, 16 Feb 2009 23:08:22 +0100
+
+oggconvert (0.3.2-1ubuntu1) jaunty; urgency=low
+
+  * Merge from Debian experimental, remaining Ubuntu changes:
+    - Suggest gstreamer multiverse plugins.
+  * debian/patches/default_location:
+    - Ubuntu provides a Videos directory in $HOME folders, place default
+      "Save Folder" location there (LP: #209592).
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Thu, 06 Nov 2008 21:33:20 +0100
+
+oggconvert (0.3.2-1) experimental; urgency=low
+
+  * New upstream release.
+  * Add support for quilt patch system.
+  * debian/patches/desktop_file_validation:
+    - Validate .desktop file against current Freedesktop standards.
+  * Bump Standards-Version to 3.8.0.
+  * Add DM-Upload-Allowed field.
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Mon, 15 Sep 2008 13:44:56 +0200
+
+oggconvert (0.3.1-3ubuntu1) intrepid; urgency=low
+
+  * Merge from debian unstable (LP: #230268), remaining changes:
+    - Suggest gstreamer multiverse plugins
+
+ -- Onkar Shinde <onkarshinde@gmail.com>  Wed, 14 May 2008 17:33:20 +0530
+
+oggconvert (0.3.1-3) unstable; urgency=low
+
+  * debian/control:
+    - Depend on librsvg2-common (Closes: #478109).
+  * debian/watch:
+    - Scan Launchpad project page, official website do not ship release
+      tarballs due to data loss (Closes: #462824).
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Tue, 29 Apr 2008 09:50:19 +0200
+
+oggconvert (0.3.1-2ubuntu1) hardy; urgency=low
+
+  * Merge from Debian unstable. Fix LP: #204895
+    Remaining changes:
+    - Suggest gstreamer multiverse plugins
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Sat, 22 Mar 2008 17:08:14 +0100
+
+oggconvert (0.3.1-2) unstable; urgency=low
+
+  * debian/rules:
+    - Do not delete /usr/lib directory, this was due to a python-central
+      bug, now solved (Closes: #472017).
+  * debian/control:
+    - Build-depend on python-central (>= 0.6).
+    - s/Gnome/GNOME/, fix spelling-error-in-description lintian warning
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Sat, 22 Mar 2008 09:42:07 +0100
+
+oggconvert (0.3.1-1ubuntu1) hardy; urgency=low
+
+  * Merge from debian unstable. Fix LP: #175770
+    Remaining changes:
+    - Suggest gstreamer multiverse plugins
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Sat, 19 Jan 2008 17:52:14 +0100
+
+oggconvert (0.3.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Drop the following patches (merged upstream) together with dpatch:
+    - debian/patches/01_shebang_removals.dpatch
+    - debian/patches/02_TypeError_fix.dpatch
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Fri, 18 Jan 2008 13:37:48 +0100
+
+oggconvert (0.3.0-2ubuntu1) hardy; urgency=low
+
+  * Merge from Debian unstable. Fix LP: #180172
+    Remaining Ubuntu changes:
+    - Suggest gstreamer multiverse plugins
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Mon, 14 Jan 2008 11:19:08 +0100
+
+oggconvert (0.3.0-2) unstable; urgency=low
+
+  * debian/patches/02_TypeError_fix:
+    - Fix TypeError exception, thanks Oleksandr Moskalenko
+  * Update to new policy (3.7.3)
+  * Remove debian/pycompat
+  * Do not provide /usr/lib in binary package, fix lintian warning
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Thu, 03 Jan 2008 17:50:58 +0100
+
+oggconvert (0.3.0-1ubuntu1) hardy; urgency=low
+
+  * Merge from debian unstable, remaining changes:
+    - Suggest gstreamer multiverse plugins
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Mon, 26 Nov 2007 09:42:11 +0000
+
+oggconvert (0.3.0-1) unstable; urgency=low
+
+  * New upstream release
+    - Drop debian/oggconvert.svg, now provided upstream
+    - Drop debian/patches/01_desktop_file_icon.dpatch, fixed upstream
+  * debian/patches/01_shebang_removals.dpatch:
+    - do not include #!/usr/bin/python in OggConvert/__init__.py
+  * debian/control: add Matroska details to long description
+  * debian/watch: improve regex
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Sun, 25 Nov 2007 03:51:40 +0100
+
+oggconvert (0.2.1.1-3ubuntu1) hardy; urgency=low
+
+  * Merge from debian unstable (LP: #165069)
+  * Suggest gstreamer multiverse plugins yet again after debian merge.
+
+ -- Paul David Bartell <paul-bartell@ubuntu.com>  Sun, 25 Nov 2007 12:49:31 -0800
+
+oggconvert (0.2.1.1-3) unstable; urgency=low
+
+  * Do not recommend gstreamer0.10-schroedinger, suggest it instead
+  * Use Homepage field in debian/control
+  * Remove XS-Vcs-Bzr field in debian/control, not really useful for now
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Mon, 29 Oct 2007 00:17:14 +0100
+
+oggconvert (0.2.1.1-2ubuntu1) gutsy; urgency=low
+
+  * Resync with Debian unstable
+  * Suggest gstreamer multiverse plugins
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Fri, 17 Aug 2007 22:00:19 +0200
+
+oggconvert (0.2.1.1-2) unstable; urgency=low
+
+  * Depends on python-glade2 (Closes: #437964) Thanks to Adrian Bunk
+  * Improve clean routine in debian/rules
+  * Use XS-Vcs-Bzr in debian/control
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Wed, 15 Aug 2007 11:10:35 +0200
+
+oggconvert (0.2.1.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #430730)
+  * Added icon from https://launchpad.net/bugs/117849
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Thu,  2 Aug 2007 15:41:41 +0200

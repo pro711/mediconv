@@ -1,0 +1,18 @@
+Validate .desktop file against current Freedesktop standards.
+
+Index: oggconvert-0.3.2/data/oggconvert.desktop
+===================================================================
+--- oggconvert-0.3.2.orig/data/oggconvert.desktop	2008-09-15 13:32:38.734574676 +0200
++++ oggconvert-0.3.2/data/oggconvert.desktop	2008-09-15 13:32:49.927203293 +0200
+@@ -1,6 +1,5 @@
+ [Desktop Entry]
+ Version=1.0
+-Encoding=UTF-8
+ Name=OggConvert
+ Comment=Convert media files to Free formats
+ Type=Application
+@@ -9,4 +8,3 @@
+ Categories=AudioVideo;
+ Terminal=false
+ StartupNotify=false
+-GenericName[en_GB]=

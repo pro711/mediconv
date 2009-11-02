@@ -1,0 +1,39 @@
+Source: oggconvert
+Section: sound
+Priority: optional
+Maintainer: Luca Falavigna <dktrkranz@ubuntu.com>
+Uploaders: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 5), quilt
+Build-Depends-Indep: python-central (>= 0.6), python-all-dev (>= 2.4), python-gst0.10
+Homepage: http://oggconvert.tristanb.net/
+Vcs-Svn: svn://svn.debian.org/python-apps/packages/oggconvert/trunk/
+Vcs-Browser: http://svn.debian.org/viewsvn/python-apps/packages/oggconvert/trunk/
+Standards-Version: 3.8.0
+XS-Python-Version: all
+DM-Upload-Allowed: yes
+
+Package: oggconvert
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}, python-gtk2, python-glade2, python-gst0.10, librsvg2-common
+Recommends: gstreamer0.10-plugins-base, gstreamer0.10-plugins-good, gstreamer0.10-plugins-bad, gstreamer0.10-plugins-ugly
+Suggests: gstreamer0.10-schroedinger, gstreamer0.10-plugins-bad-multiverse, gstreamer0.10-plugins-ugly-multiverse
+XB-Python-Version: ${python:Versions}
+Description: Convert media files to free formats
+ OggConvert is a small GNOME utility which uses GStreamer to convert 
+ (almost) any media file to the patent-free Ogg Vorbis, Theora and 
+ Dirac formats.
+ . 
+ The main interesting points are:
+  * It is very easy to use: drag a file onto the source bar (or use 
+    the file chooser) and hit Convert button. Of course, you can also change 
+    the video format, quality settings and the output filename if you like.
+  * It uses GStreamer, so it can convert (almost) any file Totem can play.
+  * It can deal with audio-only files, video-only files, and files with many 
+    audio tracks (such as DVD rips with a commentary track).
+  * Thanks to the magic of GStreamer, metadata (for example, title and artist 
+    info on an MP3) is preserved.
+  * Adheres to the GNOME HIG as much as possible.
+  * Supports the Schroedinger encoder for encoding to the Dirac video format 
+    (note that this encoder is currently experimental).
+  * Supports encoding to the Matroska container format.
+
