@@ -1,0 +1,169 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AudioEncoder	ocv_transcoder.py	/^class AudioEncoder(gst.Bin):$/;"	c
+CONTAINER_FORMATS	ocv_constants.py	/^CONTAINER_FORMATS = ["OGG", "MATROSKA"]$/;"	v
+FORMATS	ocv_constants.py	/^FORMATS = ["THEORA", "SCHRO"]$/;"	v
+HAVE_MATROSKA	ocv_constants.py	/^HAVE_MATROSKA = None$/;"	v
+HAVE_SCHRO	ocv_constants.py	/^HAVE_SCHRO = None$/;"	v
+MATROSKAMUX_OPTS	ocv_constants.py	/^MATROSKAMUX_OPTS = { "writing-app" : "OggConvert " + version}$/;"	v
+Main	mcv_main.py	/^class Main:$/;"	c
+MediaChecker	mcv_main.py	/^from ocv_media_checker import MediaChecker$/;"	i
+MediaChecker	ocv_media_checker.py	/^class MediaChecker(gobject.GObject):$/;"	c
+OGGMUX_OPTS	ocv_constants.py	/^OGGMUX_OPTS = {}$/;"	v
+ProgressWindow	mcv_in_progress.py	/^class ProgressWindow:$/;"	c
+ProgressWindow	mcv_main.py	/^from mcv_in_progress import ProgressWindow$/;"	i
+SCHRO_OPTS	ocv_constants.py	/^SCHRO_OPTS = { "perceptual_weighting" : 1 }$/;"	v
+SCHRO_QUALITY_MAPPING	ocv_constants.py	/^SCHRO_QUALITY_MAPPING = { 0 : 0$/;"	v
+THEORA_OPTS	ocv_constants.py	/^THEORA_OPTS = {"sharpness" : 1}$/;"	v
+THEORA_QUALITY_MAPPING	ocv_constants.py	/^THEORA_QUALITY_MAPPING = { 0 : 0$/;"	v
+Timer	mcv_in_progress.py	/^class Timer:$/;"	c
+Transcoder	mcv_main.py	/^from ocv_transcoder import Transcoder $/;"	i
+Transcoder	ocv_transcoder.py	/^class Transcoder(gobject.GObject):$/;"	c
+USE_AUDIORATE	ocv_constants.py	/^USE_AUDIORATE = None$/;"	v
+VORBIS_OPTS	ocv_constants.py	/^VORBIS_OPTS = {}$/;"	v
+VORBIS_QUALITY_MAPPING	ocv_constants.py	/^VORBIS_QUALITY_MAPPING = { 0 : 0.0$/;"	v
+VideoEncoder	ocv_transcoder.py	/^class VideoEncoder(gst.Bin):$/;"	c
+_	mcv_in_progress.py	/^from gettext import gettext as _$/;"	i
+_	mcv_main.py	/^from gettext import gettext as _$/;"	i
+_	mcv_util.py	/^from gettext import gettext as _$/;"	i
+__del__	ocv_media_checker.py	/^    def __del__(self):$/;"	m	class:MediaChecker	file:
+__gsignals__	ocv_media_checker.py	/^    __gsignals__= {$/;"	v	class:MediaChecker
+__gsignals__	ocv_transcoder.py	/^    __gsignals__ = {$/;"	v	class:Transcoder
+__init__	mcv_in_progress.py	/^    def __init__(self):$/;"	m	class:Timer
+__init__	mcv_in_progress.py	/^    def __init__(self, transcoder, infile, outfile):$/;"	m	class:ProgressWindow
+__init__	mcv_main.py	/^    def __init__(self):$/;"	m	class:Main
+__init__	ocv_media_checker.py	/^    def __init__(self, path):$/;"	m	class:MediaChecker
+__init__	ocv_transcoder.py	/^    def __init__(self, format, quality):$/;"	m	class:VideoEncoder
+__init__	ocv_transcoder.py	/^    def __init__(self, inuri, outuri, vformat, vquality, aquality, fformat):$/;"	m	class:Transcoder
+__init__	ocv_transcoder.py	/^    def __init__(self, quality):$/;"	m	class:AudioEncoder
+_about	mcv_main.py	/^    def _about(self, button):$/;"	m	class:Main
+_check_media	mcv_main.py	/^    def _check_media(self, filename):$/;"	m	class:Main
+_finished	ocv_media_checker.py	/^    def _finished(self):$/;"	m	class:MediaChecker
+_on_cancel_clicked	mcv_in_progress.py	/^    def _on_cancel_clicked(self, *args):$/;"	m	class:ProgressWindow
+_on_container_changed	mcv_main.py	/^    def _on_container_changed(self, combobox):$/;"	m	class:Main
+_on_end_of_stream	ocv_transcoder.py	/^    def _on_end_of_stream(self, bus, message):$/;"	m	class:Transcoder
+_on_eos	mcv_in_progress.py	/^    def _on_eos(self, unused):$/;"	m	class:ProgressWindow
+_on_eos	ocv_media_checker.py	/^    def _on_eos(self, bus, message):$/;"	m	class:MediaChecker
+_on_error	ocv_media_checker.py	/^    def _on_error(self, bus, message):$/;"	m	class:MediaChecker
+_on_file_changed	mcv_main.py	/^    def _on_file_changed(self, filechooser):$/;"	m	class:Main
+_on_format_changed	mcv_main.py	/^    def _on_format_changed(self, combobox):$/;"	m	class:Main
+_on_go	mcv_main.py	/^    def _on_go(self, button):$/;"	m	class:Main
+_on_have_type	ocv_media_checker.py	/^    def _on_have_type(self, typefind, notused, caps):$/;"	m	class:MediaChecker
+_on_media_discovered	mcv_main.py	/^    def _on_media_discovered(self, *args):$/;"	m	class:Main
+_on_new_decoded_pad	ocv_media_checker.py	/^    def _on_new_decoded_pad(self, dbin, pad, notused):$/;"	m	class:MediaChecker
+_on_new_pad	ocv_transcoder.py	/^    def _on_new_pad(self, element, pad, args):$/;"	m	class:Transcoder
+_on_no_more_pads	ocv_media_checker.py	/^    def _on_no_more_pads(self, dbin):$/;"	m	class:MediaChecker
+_on_pause_clicked	mcv_in_progress.py	/^    def _on_pause_clicked(self, button):        $/;"	m	class:ProgressWindow
+_on_paused	mcv_in_progress.py	/^    def _on_paused(self, unused):$/;"	m	class:ProgressWindow
+_on_playing	mcv_in_progress.py	/^    def _on_playing(self, unused):$/;"	m	class:ProgressWindow
+_on_quit	mcv_main.py	/^    def _on_quit(self, *args ):$/;"	m	class:Main
+_on_radio_button_toggled	mcv_main.py	/^    def _on_radio_button_toggled(self, button):$/;"	m	class:Main
+_on_state_changed	ocv_transcoder.py	/^    def _on_state_changed(self, bus, message):$/;"	m	class:Transcoder
+_on_unknown_type	ocv_media_checker.py	/^    def _on_unknown_type(self, dbin, pad, caps):$/;"	m	class:MediaChecker
+_preroll_failed	mcv_in_progress.py	/^    def _preroll_failed(self):$/;"	m	class:ProgressWindow
+_pulse_progressbar	mcv_in_progress.py	/^    def _pulse_progressbar(self):$/;"	m	class:ProgressWindow
+_set_extension	mcv_main.py	/^    def _set_extension(self):$/;"	m	class:Main
+_set_sensitivities	mcv_main.py	/^    def _set_sensitivities(self,status):$/;"	m	class:Main
+_set_up_filechooser	mcv_main.py	/^    def _set_up_filechooser(self):     $/;"	m	class:Main
+_update_progressbar	mcv_in_progress.py	/^    def _update_progressbar(self):$/;"	m	class:ProgressWindow
+about_dialogue	mcv_main.py	/^from mcv_util import confirm_overwrite, about_dialogue$/;"	i
+about_dialogue	mcv_util.py	/^def about_dialogue(window=None):$/;"	f
+app_name	mcv_info.py	/^app_name = "oggconvert"$/;"	v
+app_name	mcv_main.py	/^from mcv_info import app_name, xmlpath, localepath, pixmappath$/;"	i
+app_name	ocv_info.py	/^app_name = "oggconvert"$/;"	v
+artists	mcv_info.py	/^artists = ["A. Bram Neijt <bneijt@gmail.com>"]$/;"	v
+artists	ocv_info.py	/^artists = ["A. Bram Neijt <bneijt@gmail.com>"]$/;"	v
+authors	mcv_info.py	/^authors = ["Written by:"$/;"	v
+authors	ocv_info.py	/^authors = ["Written by:"$/;"	v
+basepath	mcv_info.py	/^basepath = os.path.abspath(sys.argv[0])$/;"	v
+basepath	ocv_info.py	/^basepath = os.path.abspath(sys.argv[0])$/;"	v
+cancel_check	mcv_in_progress.py	/^                        cancel_check$/;"	i
+cancel_check	mcv_util.py	/^def cancel_check(window=None):$/;"	f
+confirm_overwrite	mcv_in_progress.py	/^                        cancel_check$/;"	i
+confirm_overwrite	mcv_main.py	/^from mcv_util import confirm_overwrite, about_dialogue$/;"	i
+confirm_overwrite	mcv_util.py	/^def confirm_overwrite(path, window=None):$/;"	f
+copyright	mcv_info.py	/^copyright = "© 2007, 2008 Tristan Brindle\\n© 2009 Bill Chen"$/;"	v
+copyright	ocv_info.py	/^copyright = "© 2007, 2008 Tristan Brindle"$/;"	v
+discoverer	ocv_media_checker.py	/^from gst.extend import discoverer$/;"	i
+get_duration	ocv_transcoder.py	/^    def get_duration(self):$/;"	m	class:Transcoder
+get_elapsed	mcv_in_progress.py	/^    def get_elapsed(self):$/;"	m	class:Timer
+get_position	ocv_transcoder.py	/^    def get_position(self):$/;"	m	class:Transcoder
+gettext	mcv_main.py	/^import gettext$/;"	i
+gladepath	ocv_info.py	/^gladepath = os.path.dirname(os.path.abspath(__file__))$/;"	v
+gladepath	ocv_info.py	/^gladepath = os.path.join(gladepath, "oggcv.glade")$/;"	v
+gobject	mcv_in_progress.py	/^import gobject$/;"	i
+gobject	mcv_main.py	/^import gobject$/;"	i
+gobject	ocv_media_checker.py	/^import gobject$/;"	i
+gobject	ocv_transcoder.py	/^import gobject$/;"	i
+gst	ocv_init.py	/^import gst$/;"	i
+gst	ocv_media_checker.py	/^import gst$/;"	i
+gst	ocv_transcoder.py	/^import gst$/;"	i
+gstver	ocv_init.py	/^gstver = gst.version()$/;"	v
+gtk	mcv_in_progress.py	/^import gtk$/;"	i
+gtk	mcv_main.py	/^import gtk$/;"	i
+gtk	mcv_util.py	/^import gtk$/;"	i
+hourminsec	mcv_in_progress.py	/^                        cancel_check$/;"	i
+hourminsec	mcv_util.py	/^def hourminsec(time):$/;"	f
+locale	mcv_main.py	/^import locale$/;"	i
+localepath	mcv_info.py	/^    localepath = "..\/mo"$/;"	v
+localepath	mcv_info.py	/^localepath = os.path.join(prefix,"share","locale")$/;"	v
+localepath	mcv_main.py	/^from mcv_info import app_name, xmlpath, localepath, pixmappath$/;"	i
+localepath	ocv_info.py	/^    localepath = "mo"$/;"	v
+localepath	ocv_info.py	/^localepath = os.path.join(prefix,"share","locale")$/;"	v
+main	mcv_main.py	/^    main = Main()$/;"	v
+mcv_info	mcv_util.py	/^import mcv_info$/;"	i
+ocv_constants	mcv_main.py	/^import ocv_constants$/;"	i
+ocv_constants	ocv_init.py	/^import ocv_constants$/;"	i
+ocv_constants	ocv_transcoder.py	/^import ocv_constants$/;"	i
+ocv_init	mcv_main.py	/^import ocv_init$/;"	i
+os	mcv_in_progress.py	/^import os$/;"	i
+os	mcv_info.py	/^import os.path$/;"	i
+os	mcv_main.py	/^import os$/;"	i
+os	mcv_main.py	/^import os.path$/;"	i
+os	mcv_util.py	/^import os.path$/;"	i
+os	ocv_info.py	/^import os.path$/;"	i
+path	mcv_info.py	/^import os.path$/;"	i
+path	mcv_main.py	/^import os.path$/;"	i
+path	mcv_util.py	/^import os.path$/;"	i
+path	ocv_info.py	/^import os.path$/;"	i
+pause	ocv_transcoder.py	/^    def pause(self):$/;"	m	class:Transcoder
+pixmappath	mcv_info.py	/^    pixmappath = "..\/data"    $/;"	v
+pixmappath	mcv_info.py	/^pixmappath = os.path.join(prefix,"share","pixmaps")$/;"	v
+pixmappath	mcv_main.py	/^from mcv_info import app_name, xmlpath, localepath, pixmappath$/;"	i
+pixmappath	ocv_info.py	/^    pixmappath = "data"    $/;"	v
+pixmappath	ocv_info.py	/^pixmappath = os.path.join(prefix,"share","pixmaps")$/;"	v
+play	ocv_transcoder.py	/^    def play(self):$/;"	m	class:Transcoder
+prefix	mcv_info.py	/^prefix = os.path.dirname(os.path.dirname(basepath))$/;"	v
+prefix	ocv_info.py	/^prefix = os.path.dirname(os.path.dirname("\/usr\/bin\/"))$/;"	v
+pygst	ocv_init.py	/^import pygst$/;"	i
+pygst	ocv_transcoder.py	/^import pygst$/;"	i
+pygtk	mcv_main.py	/^import pygtk$/;"	i
+reset	mcv_in_progress.py	/^    def reset(self):$/;"	m	class:Timer
+run	mcv_in_progress.py	/^    def run(self):$/;"	m	class:ProgressWindow
+run	ocv_media_checker.py	/^    def run(self):$/;"	m	class:MediaChecker
+schrofac	ocv_init.py	/^        schrofac = gst.element_factory_find("schroenc")$/;"	v
+show_url	mcv_util.py	/^def show_url(dialog, link, userdata):$/;"	f
+start	mcv_in_progress.py	/^    def start(self):$/;"	m	class:Timer
+stop	mcv_in_progress.py	/^    def stop(self):$/;"	m	class:Timer
+stop	ocv_transcoder.py	/^    def stop(self):   $/;"	m	class:Transcoder
+sync	ocv_transcoder.py	/^    def sync(self):$/;"	m	class:Transcoder
+sys	mcv_info.py	/^import sys$/;"	i
+sys	mcv_main.py	/^import sys$/;"	i
+sys	ocv_info.py	/^import sys$/;"	i
+time	mcv_in_progress.py	/^from time import time$/;"	i
+timeremaining	mcv_in_progress.py	/^                        cancel_check$/;"	i
+timeremaining	mcv_util.py	/^def timeremaining(elapsed, percent):$/;"	f
+urllib	mcv_main.py	/^import urllib$/;"	i
+version	mcv_info.py	/^version = "0.1.0"$/;"	v
+version	ocv_constants.py	/^from ocv_info import version$/;"	i
+version	ocv_info.py	/^version = "0.3.2"$/;"	v
+webbrowser	mcv_util.py	/^import webbrowser$/;"	i
+website	mcv_info.py	/^website = "http:\/\/oggconvert.tristanb.net\/"$/;"	v
+website	ocv_info.py	/^website = "http:\/\/oggconvert.tristanb.net\/"$/;"	v
+xmlpath	mcv_info.py	/^xmlpath = os.path.dirname(os.path.abspath(__file__))$/;"	v
+xmlpath	mcv_info.py	/^xmlpath= os.path.join(xmlpath, "mediconv.xml")$/;"	v
+xmlpath	mcv_main.py	/^from mcv_info import app_name, xmlpath, localepath, pixmappath$/;"	i

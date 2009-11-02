@@ -1,0 +1,17 @@
+Index: oggconvert-0.3.2/OggConvert/ocv_main.py
+===================================================================
+--- oggconvert-0.3.2.orig/OggConvert/ocv_main.py	2008-11-06 22:12:35.536963832 +0100
++++ oggconvert-0.3.2/OggConvert/ocv_main.py	2008-11-06 22:13:55.361509458 +0100
+@@ -316,7 +316,11 @@
+         self._file_chooser_button.add_filter(audio)
+         self._file_chooser_button.add_filter(allfiles)
+         
+-        self._file_chooser_button.set_current_folder(
++        if os.path.exists(os.path.expanduser("~/Videos")):
++            self._file_chooser_button.set_current_folder(
++                        os.path.expanduser("~/Videos"))
++        else:
++            self._file_chooser_button.set_current_folder(
+                         os.path.expanduser("~"))
+         
+         self._file_chooser_button.set_local_only(False)
