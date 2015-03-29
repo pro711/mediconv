@@ -1,0 +1,1 @@
+MediConv is a simple media converter based on OggConvert. It is mainly designed to convert media files to free formats including Vorbis, Theora, etc in an easy way.
